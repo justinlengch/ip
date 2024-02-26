@@ -23,6 +23,7 @@ public class Main extends Application{
             VBox vb = fxmlLoader.load();
             Scene scene = new Scene(vb);
             stage.setScene(scene);
+            stage.setTitle("RahhBot");
             fxmlLoader.<MainWindow>getController().setDuke(duke);
             stage.show();
         } catch (IOException e) {

@@ -110,7 +110,7 @@ public class TaskList extends ArrayList<Task> {
         TaskList foundTasks = new TaskList();
         StringBuilder result = new StringBuilder();
         for (Task task : this) {
-            if (task.getDescription().contains(searchTerm)) {
+            if (task.getDescription().toLowerCase().contains(searchTerm.toLowerCase())) {
                 foundTasks.add(task);
             }
         }
